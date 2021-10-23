@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situs Jual Beli Online Termurah</title>
+</head>
+<body bgcolor="#76f5ee">
+    <br>
+        <table border="2" width="80%" align="center" bgcolor="yellow">
+            <tbody>
+                <tr>
+                    <td width="15%" align="center"><a href="">Halaman Utama</a> &nbsp;  </td>
+                    <td width="15%" align="center"><a href="">Hasil Tautan</a></td>
+                    <td width="15%" align="center"><a href="">Riwayat Transaksi</a></td>
+                    <td width="15%" align="center"><a href="">Lapor</a></td>
+                    <td width="15%" align="center"><a href="">Keluar</a></td>
+            </tbody>
+        </table>
+    <br>
+    <br>
+        <table>
+            <tbody>
+                <tr>
+                    <td><form action="/client.php" method="post" enctype="multipart/form-data"><img src=""> <br> <label>Upload Picture<input type="file" name="photo"></label></form></td>
+                    <td>Judul Disini</td> 
+                    <td>: <input type="text" name="title"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Nomor Akun</td>
+                    <td>: <input type="text" name="number"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Bank</td>
+                    <td>: <input type="text" list="bank" placeholder="Pilih Menu Bank "><datalist id="bank">
+                        <option value="BRI"></option>
+                        <option value="BNI"></option>
+                        <option value="Mandiri"></option>
+                        <option value="BCA"></option>
+                        <option value="Mega"></option>
+                        <option value="DANA"></option>
+                        <option value="OVO"></option>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Pemegang Akun</td>
+                    <td>: <input type="text" name="holder"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Transaksi</td>
+                    <td>: <input type="number" name="transaksi" min="1" max="3"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Deskripsi</td>
+                    <td>: <textarea placeholder="Tidak lebih dari 400 karakter" maxlength="400" id="instructions" name="instructions" cols="47,5" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><p>*jika transaksi untuk 3 orang, pilih 3 dari list diatas</p> 
+                        <input type="checkbox" id="phone" name="phone" value="phone" style="color: #0728e2;">
+                        <label for="phone" style="color: #0431f7;"><strong>Kirim ke Ponsel</strong> </label> <br>
+                        <input type="checkbox" id="email" name="email" value="email" style="color: #071de2;">
+                        <label for="email" style="color: #0728e2;"><strong>Kirim ke Email</strong> </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Kirim ke Ponsel</td>
+                    <td>: <input type="text" name="ponsel"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Kirim ke Email</td>
+                    <td>: <input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="submit" value="Kirim" style="color: rgb(9, 25, 248);" placeholder="Generate Link"></td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
